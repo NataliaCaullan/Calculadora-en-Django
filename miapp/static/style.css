@@ -1,0 +1,40 @@
+/* quitar margin y padding de navegador */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para la calculadora */
+.calculadora {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 50px 0px 50px 50px;
+    border: 2px solid #000000;
+    border-radius: 5%;
+    transform: translate(-50%, -50%);
+}
+
+#pantalla {
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+    text-align: right;
+    margin: 10px 0px 5px 5px;
+    border: 1px solid black;
+}
+
+.botones button {
+    width: 70px;
+    height: 40px;
+    font-size: 16px;
+    margin: 5px;
+    background-color: #f1f1f1;
+    color: #000000;
+}
+
+.botones .borrar {
+    background-color: red;
+    color: white;
+}

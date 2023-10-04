@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="pantalla" disabled> <!-- Pantalla principal -->
+        <div class="botones">
+            <button onclick="operacion('%')">%</button>     <!-- Botón para el módulo -->
+            <button onclick="raizCuadrada()">√x</button>    <!-- Botón para la raíz cuadrada -->
+            <button onclick="inversoAditivo()">-x</button>  <!-- Botón para el inverso aditivo -->
+            <button onclick="borrar()" class="borrar">AC</button>           <!-- Botón para borrar -->
+            <button onclick="agregarNumero(7)">7</button>   <!-- Botón para el número 7 -->
+            <button onclick="agregarNumero(8)">8</button>   <!-- Botón para el número 8 -->
+            <button onclick="agregarNumero(9)">9</button>   <!-- Botón para el número 9 -->
+            <button onclick="operacion('+')">+</button>     <!-- Botón para la suma -->
+            <button onclick="agregarNumero(4)">4</button>   <!-- Botón para el número 4 -->
+            <button onclick="agregarNumero(5)">5</button>   <!-- Botón para el número 5 -->
+            <button onclick="agregarNumero(6)">6</button>   <!-- Botón para el número 6 -->
+            <button onclick="operacion('-')">-</button>     <!-- Botón para la resta -->
+            <button onclick="agregarNumero(1)">1</button>   <!-- Botón para el número 1 -->
+            <button onclick="agregarNumero(2)">2</button>   <!-- Botón para el número 2 -->
+            <button onclick="agregarNumero(3)">3</button>   <!-- Botón para el número 3 -->
+            <button onclick="operacion('*')">*</button>     <!-- Botón para la multiplicación -->
+            <button onclick="agregarNumero(0)">0</button>   <!-- Botón para el número 0 -->
+            <button onclick="puntoDecimal()">.</button>     <!-- Botón para el punto decimal -->
+            <button onclick="calcular()">=</button>         <!-- Botón para calcular el resultado -->
+            <button onclick="operacion('/')">/</button>     <!-- Botón para la división -->
+        </div>
+    </div>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
